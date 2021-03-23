@@ -35,7 +35,7 @@ async def on_ready():
 
 async def getprices():
     while True:
-        await asyncio.sleep(30)
+        await asyncio.sleep(60)
         print("Updating Prices")
         ItemJson = requests.get(PriceURL,json={'key':'value'},headers=headers)
         global itemprices
